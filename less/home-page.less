@@ -5,6 +5,11 @@
   .intro {
 
       align-items: center;
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
   
     h2 {
       padding: 15px;
@@ -51,10 +56,20 @@
 
     h3 {
       margin-top: 11px;
+      @media @phone{
+        text-align: center;
+      }
     }
 
     p {
       margin-top: 13px;
+      @media @phone{
+      display: flex;
+      flex-direction: center;
+      width:80%;
+      
+    
+      }
     }
   }
 
@@ -64,14 +79,25 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone{
+      flex-direction: column-reverse;
+    }
+  
+
     
     
 
     .walk-text {
       width: 50%;
+      @media @phone{
+        width: 100%;;
+      }
       
       h3 {
         margin-bottom: 10px;
+        @media @phone{
+         text-align: center;
+        }
       }
 
       p {
@@ -88,6 +114,7 @@
           border-radius: 10px;
           @media @phone{
             width: 100%;
+            text-align: center;
           }
            }
         }
